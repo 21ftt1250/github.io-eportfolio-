@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>week5</title>
+	<style type="text/css">
+		/*300x300*/
+		img{width: 300px;height:300px;border:2px solid green}
+		/*img{border:2px dashed green}*/
+		/*img called element selecter thus all image sama cematu*/
+
+		.greenborder{border: 2px solid green; display: none} 
+		/*no semi colon will it be affected or not?, yes it will bcs if u have more property*/ /* - HOWEVER IF ONLY 1 PROPERTY semi colon is optional*/
+
+		.purpleborder{border: 3px dashed purple} /*class selector so .*/
+		#magentaborder{border:5px dotted magenta;}
+	
+		/*border is example of the properties*/
+		/*ID WE HAVE CLASS AND ID SELECTER ID SELECTER WINS*/
+		/*if u apply prefix? infront of a property it will only apply to that one such as
+		img.greenborder{border: 2px solid green}*/ 
+
+		#p1{font size: 20px; color: orange;}
+		#p2{font-size: 25px; color: orange;}
+		#p3{font-size: 25px; color: skyblue;}
+
+		/*a class can have several thing such as in p2*/
+		/*if 1 only pakai id 
+		if more pakai class(.)*/
+
+		div{width: 300px; height: 300px; border: 1px solid olive; display: inline}
+	    /*the additional inline makes it continue after the  image*/
+
+		span{width: 600px; height: 600px; border: 2px solid brown; display: block}
+		/*<!-- div-300x300 border 1px solid olive 
+		span600x600 2px solid brown -->*/
+
+		/*div is a block element bcs can change height and width it only ikut the size atu run if wanna know the diff
+		span is an inline element */
+
+		/*the images is inline pasal ya sebaris*/
+
+		/*p is an element selector use it if semua paragraph no font*/
+
+
+
+	</style>
+
+
+</head>
+<body>
+
+
+	<img src="v-1.jpg" id="magentaborder"> <!-- pakai id selecter sal 1 saja -->
+	<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+	
+<!-- P1 20px orange
+p2 25 px orange
+p3 25px skyblue -->
+
+
+	<p class="" id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	<!-- pull forlder from th -->
+	<img src="assets/images/th/t-1.jpg" class="greenborder">
+	<img src="assets/images/th/t-2.jpg" class="greenborder">
+	<img src="assets/images/th/t3.jpg" class="greenborder">
+	
+
+	<p class="" id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<!-- pull images from folder my -->
+	<img src="assets/images/my/m-1.jpg" class="greenborder">
+	<img src="assets/images/my/m-2.jpg" class="greenborder">
+	<img src="assets/images/my/m-3.jpg" class="greenborder">
+	
+	<p class="" id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<!-- pull images from folder id -->
+	<img src="assets/images/id/i-1.jpg" class="purpleborder">
+	<img src="assets/images/id/i-2.jpg" class="purpleborder">
+	<img src="assets/images/id/i-3.jpg" class="purpleborder">
+	<!-- 3px-purple -->
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+
+	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+	
+	<!-- div and span common -->
+	<!-- div is division -->
+	<!-- span is bascially if u want to make the text font changeish/ use more for labelling -->
+
+</body>
+</html>
