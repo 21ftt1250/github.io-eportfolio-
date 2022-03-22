@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 7-1-2</title>
+<!-- week 6-3  -->
+<!-- flex-direction: column; row row-reverse
+flex-direction: row-reverse;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-items: center;  -->
+
+<!-- 
+
+align-content
+•align-self -->
+	<style type="text/css">
+		
+		div{display: flex; border: 1px solid; 
+			width: 500px;height:400px;
+			justify-content: space-around;
+			flex-wrap: wrap; /*it will not wrap kebawh sal the the size already determine*/
+
+			align-content: center;   
+			/*also affects the flex line*/        
+			/*if remove it wil go to flex start*/    
+			/*only works if ada more than 1 line to make more than 1 line use flex wrap*/
+
+			/*justify-content: center;*/         
+			/*to move it to the center and it will affect the horizontal which is the main and x-axis, 
+			if its alighn is vertical which is the cross and the y-axis*/
+
+			width: 500px; /*it over writes and it will wrap like fill in everything kebawah and siringnya uncomment if mau liat */}
+
+		p{width:200px;height: 100px; 
+			background-color: cyan;
+			border: 1px solid;
+			box-sizing: border-box;}
+
+			p:nth-child(odd) {align-self: flex-end}
+			p:nth-child(even){align-self: center}
+	</style>
+
+</head>
+<body>
+<div>
+	<p>1</p><p>2</p><p>3</p><p>4</p> <!-- the child is the flex item -->
+</div>
+</body>
+</html>
